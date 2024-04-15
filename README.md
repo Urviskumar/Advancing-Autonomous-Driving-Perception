@@ -51,3 +51,29 @@ tation.
 The integration of these hardware components through ROS
  facilitated a modular approach, allowing for the independent
  development and testing of subsystems.
+
+##  C. Challenges and Solution
+ The project faced significant challenges in terms of  computational power.
+ The computational capacity of the Jetson
+ Xavier was limited, which posed a significant hurdle. The
+ team was unable to implement 2D LiDAR fusion and the
+ ZED 2 camera as initially planned due to these constraints.
+ Additionally, the project demanded significant computational
+ power for processing depth information from the ZED2 RGBD
+ camera and running the YOLOv5 object detection model
+ simultaneously to perform Autonomous Navigation. These
+ computation demands added to the complexity and challenges
+ of the project.
+ Despite the challenges, the team managed to devise effective
+ solutions and achieve significant milestones. For depth-based
+ perception, the ZED 2 camera was utilized for depth and RGB
+ data. The team estimated distances to objects using the depth
+ map, which proved to be a valuable asset for the project. For
+ autonomous navigation, the team incorporated computer vision
+ techniques to detect lanes and control the robot accordingly.
+ Werelied on depth data to get the distance of the object (traffic
+ sign), which was crucial for the navigation system. To address
+ the resource constraints, the team optimized algorithms for
+ computational efficiency. We achieved real-time performance
+ on Jetson Xavier by prioritizing system efficiency, which
+ significantly improved the overall performance of the project.
