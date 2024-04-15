@@ -53,7 +53,7 @@ The integration of these hardware components through ROS
  development and testing of subsystems.
 
 ##  C. Challenges and Solution
- The project faced significant challenges in terms of  computational power.
+The project faced significant challenges in terms of  computational power.
  The computational capacity of the Jetson
  Xavier was limited, which posed a significant hurdle. The
  team was unable to implement 2D LiDAR fusion and the
@@ -64,7 +64,7 @@ The integration of these hardware components through ROS
  simultaneously to perform Autonomous Navigation. These
  computation demands added to the complexity and challenges
  of the project.
- Despite the challenges, the team managed to devise effective
+Despite the challenges, the team managed to devise effective
  solutions and achieve significant milestones. For depth-based
  perception, the ZED 2 camera was utilized for depth and RGB
  data. The team estimated distances to objects using the depth
