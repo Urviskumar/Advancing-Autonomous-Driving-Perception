@@ -152,7 +152,24 @@ https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/7e5
  within the lanes, demonstrating the effectiveness of the control
  algorithms implemented. The success in lane following is a
  testament to the robustness of the computer vision techniques
- and control algorithms used in this project.</p>
+ and control algorithms used in this project.
+The robot was capable of detecting objects of interest within
+ its environment, such as ”Turn”, ”Go”, or ”Stop” signs. This
+ was achieved using advanced computer vision techniques.
+ The detection was used to trigger specific actions by the
+ robot, adding a layer of interactivity and responsiveness to the
+ system. The successful detection of objects of interest and the
+ subsequent triggering of actions demonstrate the effectiveness
+ of the object detection algorithms implemented.
+ The robot was able to estimate the distance to detected
+ objects using depth information obtained from the camera.
+ This information was crucial for making decisions about when
+ to execute certain actions, such as stopping or turning. The
+ ability to accurately estimate distances to objects is a critical
+ component of autonomous navigation systems, as it allows the
+ system to interact safely and effectively with its environment.
+ The success in object distance estimation indicates the effec
+tiveness of the depth perception capabilities of the system.</p>
 
  
 
