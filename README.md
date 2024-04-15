@@ -78,3 +78,79 @@ Despite the challenges, the team managed to devise effective
  computational efficiency. We achieved real-time performance
  on Jetson Xavier by prioritizing system efficiency, which
  significantly improved the overall performance of the project.
+
+
+## C. Working
+ 1) Lane Detection: In this project, we embarked on a
+ journey to develop an autonomous navigation system, starting with 
+ the fundamental task of detecting lanes. 
+
+ 2) Object Detection: We utilized the YOLOv5 pre-trained
+ model for object detection. This model has been widely used
+ in various applications, including lane detection, missing road
+ lane markings detection, and pedestrian detection. The use of
+ YOLOv5 allowed us to effectively detect objects in real-time,
+ contributing significantly to the success of the project. Here we
+ have detected successfully the 'Stop', 'Move', and 'Turn' signs
+ using which robot will perform the task according to the signs.
+
+ 3) Depth Estimation: The ZED 2 camera is a powerful
+ stereo camera that plays a crucial role in depth estimation for
+ autonomous navigation. It combines advances in AI, sensor
+ hardware, and stereo vision to build an unmatched solution
+ in spatial perception and understanding. The camera features
+ ultra-wide depth perception with a 110-degree horizontal and
+ 70-degree vertical field of view, including optical distortion
+ compensation. It also has enhanced low-light vision with an
+ f/1.8 aperture and improved ISP, capturing 40 percent more
+ light in dark environments. The ZED 2 camera uses stereo
+ vision and neural networks to replicate human-like vision,
+ enabling depth perception from 0.2 to 20m².  In autonomous navigation,
+  this depth information is used to
+ identify obstacles, plan paths, and make decisions about the
+ robot's movements. 
+
+  4) PIDController:  The system utilized a PID(Proportional-Integral-Derivative)
+ controller for dynamic steering adjustment.The PID controller
+ adjusted the robot's steering based on the deviation from the
+ desired lane position.This allowed the robot to make smooth
+ and precise adjustments to its course, ensuring it stayed on
+ track and navigated the lanes effectively. Throughout this
+ project,we tried to improve our control as much as possible
+ resulting the smooth navigation with in the environment.For lane following, a PID
+ controller adjusts v and w to minimize the error between
+ the robot's current position and the desired path.
+
+## E. ROS Integration
+ The Robot Operating System (ROS) played a pivotal role
+ in the implementation of this project. ROS is a flexible
+ framework for writing robot software and provides services
+ designed for a heterogeneous computer cluster such as hardware abstraction,
+ low-level device control, implementation of
+ commonly-used functionality, message-passing between processes, and package management.<br><br>
+
+For object detection, the YOLOv5 model was integrated into
+ the ROS framework. The images from the camera were passed
+ to the YOLOv5 node, which detected objects of interest and
+ published the detections as ROS messages. These messages
+ were used to trigger specific actions by the robot.
+ The ZED 2 camera was used to obtain depth information,
+ which was crucial for object distance estimation. 
+
+## F. Results and Analysis
+ The robot demonstrated a high degree of proficiency in
+ following lane markings detected in the camera images. It
+ employed techniques such as color filtering and line fitting to
+ identify lanes. The robot was able to adjust its steering to stay
+ within the lanes, demonstrating the effectiveness of the control
+ algorithms implemented. The success in lane following is a
+ testament to the robustness of the computer vision techniques
+ and control algorithms used in this project.
+
+## Conclusion
+In conclusion, the results obtained from this project demon
+ strate the effectiveness of the techniques and algorithms im
+ plemented. The robot was able to follow lanes, detect objects,
+ and estimate distances to objects accurately, demonstrating its
+ potential for real-world applications in autonomous navigation.
+
