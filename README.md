@@ -52,6 +52,9 @@ The integration of these hardware components through ROS
  facilitated a modular approach, allowing for the independent
  development and testing of subsystems.</p>
 
+ <p align="center"><img src="our_environmnet.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
+
+
 ##  B. Challenges and Solution
 <p align="justify">The project faced significant challenges in terms of  computational power.
  The computational capacity of the Jetson
