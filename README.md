@@ -82,8 +82,8 @@ Despite the challenges, the team managed to devise effective
 ## C. Working
  <p align="justify">1) Lane Detection: In this project, we embarked on a
  journey to develop an autonomous navigation system, starting with 
- the fundamental task of detecting lanes. 
-
+ the fundamental task of detecting lanes. </p>
+ <p align="justify">
  2) Object Detection: We utilized the YOLOv5 pre-trained
  model for object detection. This model has been widely used
  in various applications, including lane detection, missing road
@@ -91,8 +91,8 @@ Despite the challenges, the team managed to devise effective
  YOLOv5 allowed us to effectively detect objects in real-time,
  contributing significantly to the success of the project. Here we
  have detected successfully the 'Stop', 'Move', and 'Turn' signs
- using which robot will perform the task according to the signs.
-
+ using which robot will perform the task according to the signs.</p>
+ <p align="justify">
  3) Depth Estimation: The ZED 2 camera is a powerful
  stereo camera that plays a crucial role in depth estimation for
  autonomous navigation. It combines advances in AI, sensor
@@ -107,8 +107,8 @@ Despite the challenges, the team managed to devise effective
  enabling depth perception from 0.2 to 20m².  In autonomous navigation,
   this depth information is used to
  identify obstacles, plan paths, and make decisions about the
- robot's movements. 
-
+ robot's movements. </p>
+ <p align="justify">
   4) PIDController:  The system utilized a PID(Proportional-Integral-Derivative)
  controller for dynamic steering adjustment.The PID controller
  adjusted the robot's steering based on the deviation from the
@@ -126,9 +126,9 @@ Despite the challenges, the team managed to devise effective
  framework for writing robot software and provides services
  designed for a heterogeneous computer cluster such as hardware abstraction,
  low-level device control, implementation of
- commonly-used functionality, message-passing between processes, and package management.<br><br>
+ commonly-used functionality, message-passing between processes, and package management.</p>
 
-For object detection, the YOLOv5 model was integrated into
+ <p align="justify">For object detection, the YOLOv5 model was integrated into
  the ROS framework. The images from the camera were passed
  to the YOLOv5 node, which detected objects of interest and
  published the detections as ROS messages. These messages
