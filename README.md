@@ -25,7 +25,7 @@ In this project, we utilized depth-based perception to en
  guided navigation, respectively. Fig1 shows such example of
  the camera that we have used in this project. 
 
-  <center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="800" height="500"/></a></center>
+  <center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
 
  ##   A. Hardware and Software Setup
 
