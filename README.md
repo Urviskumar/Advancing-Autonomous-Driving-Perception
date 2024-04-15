@@ -120,7 +120,7 @@ Despite the challenges, the team managed to devise effective
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
 
-<img src="https://github.com/Urviskumar/-Autonomous-Driving-Perception/blob/main/AutoNav2.mp4" width=60%>
+https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/dbbc2c76-e022-4b87-b0fa-56f36e2e085e
 
 
 ## E. ROS Integration
