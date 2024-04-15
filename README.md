@@ -3,7 +3,7 @@
 <center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
 
 ## Introduction
-<p style="text-align: justify;">
+<p align="justify">
 In autonomous driving, perception systems are pivotal as they
  interpret sensory data to understand the envi
  ronment, which is essential for decision-making and planning.
