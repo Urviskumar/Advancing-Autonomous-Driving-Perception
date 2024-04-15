@@ -1,4 +1,7 @@
 # Autonomous-Driving-Perception
+
+<center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
+
 ## Introduction
 <p style="text-align: justify;">In autonomous driving, perception systems are pivotal as they
  interpret sensory data to understand the envi
@@ -25,10 +28,10 @@ In this project, we utilized depth-based perception to en
  guided navigation, respectively. Fig1 shows such example of
  the camera that we have used in this project. 
 
-  <center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
-
+  
  ##   A. Hardware and Software Setup
 
+<center><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
 
 The project utilized a combination of advanced hardware
  and software to process and analyze sensor data:
