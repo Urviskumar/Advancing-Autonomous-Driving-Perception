@@ -120,7 +120,8 @@ Despite the challenges, the team managed to devise effective
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
 
-https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/dbbc2c76-e022-4b87-b0fa-56f36e2e085e
+
+https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/033d0d39-2e08-4bd2-840e-c5d0333ab1b3
 
 
 ## E. ROS Integration
@@ -138,6 +139,10 @@ https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/dbb
  were used to trigger specific actions by the robot.
  The ZED 2 camera was used to obtain depth information,
  which was crucial for object distance estimation. </p>
+
+
+https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/7e57924c-33b4-4871-89c8-27f249627703
+
 
 ## F. Results and Analysis
  <p align="justify">The robot demonstrated a high degree of proficiency in
