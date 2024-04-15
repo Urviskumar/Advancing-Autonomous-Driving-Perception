@@ -119,7 +119,10 @@ Despite the challenges, the team managed to devise effective
  resulting the smooth navigation with in the environment.For lane following, a PID
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
-
+                            <center style="font-size: 0;">
+                                <video width="1100" height="720"  autoplay muted>
+                                  <source src="AutoNav2.mp4" type="video/mp4">
+                                </video></center>
 ## E. ROS Integration
  <p align="justify">The Robot Operating System (ROS) played a pivotal role
  in the implementation of this project. ROS is a flexible
@@ -145,6 +148,8 @@ Despite the challenges, the team managed to devise effective
  algorithms implemented. The success in lane following is a
  testament to the robustness of the computer vision techniques
  and control algorithms used in this project.</p>
+
+ 
 
 ## Conclusion
 <p align="justify">In conclusion, the results obtained from this project demon
