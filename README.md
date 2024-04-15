@@ -52,7 +52,7 @@ The integration of these hardware components through ROS
  facilitated a modular approach, allowing for the independent
  development and testing of subsystems.
 
-##  C. Challenges and Solution
+##  B. Challenges and Solution
 The project faced significant challenges in terms of  computational power.
  The computational capacity of the Jetson
  Xavier was limited, which posed a significant hurdle. The
@@ -63,7 +63,7 @@ The project faced significant challenges in terms of  computational power.
  camera and running the YOLOv5 object detection model
  simultaneously to perform Autonomous Navigation. These
  computation demands added to the complexity and challenges
- of the project.
+ of the project.<br>
 Despite the challenges, the team managed to devise effective
  solutions and achieve significant milestones. For depth-based
  perception, the ZED 2 camera was utilized for depth and RGB
