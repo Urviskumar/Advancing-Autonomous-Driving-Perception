@@ -1,6 +1,6 @@
 # Autonomous-Driving-Perception
 
-<center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
+<p align="center"><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
 ## Introduction
 <p align="justify">In autonomous driving, perception systems are pivotal as they
@@ -31,7 +31,7 @@
   
  ##   A. Hardware and Software Setup
 
-<center><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
+<p align="center"><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
 <p align="justify">The project utilized a combination of advanced hardware
  and software to process and analyze sensor data:
@@ -120,10 +120,9 @@ Despite the challenges, the team managed to devise effective
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
 
-<center style="font-size: 0;">
-    <video width="1100" height="720"  autoplay muted>
-    <source src="AutoNav2.mp4" type="video/mp4"></video></center>
-    
+<img src="https://github.com/Urviskumar/-Autonomous-Driving-Perception/blob/main/AutoNav2.mp4" width=60%>
+
+
 ## E. ROS Integration
  <p align="justify">The Robot Operating System (ROS) played a pivotal role
  in the implementation of this project. ROS is a flexible
