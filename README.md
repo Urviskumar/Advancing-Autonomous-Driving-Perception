@@ -3,7 +3,8 @@
 <center><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
 
 ## Introduction
-<p style="text-align: justify;">In autonomous driving, perception systems are pivotal as they
+<p style="text-align: justify;">
+In autonomous driving, perception systems are pivotal as they
  interpret sensory data to understand the envi
  ronment, which is essential for decision-making and planning.
  Ensuring the safety of these perception systems is fundamental
@@ -63,7 +64,7 @@ The project faced significant challenges in terms of  computational power.
  camera and running the YOLOv5 object detection model
  simultaneously to perform Autonomous Navigation. These
  computation demands added to the complexity and challenges
- of the project.<br>
+ of the project.<br><br>
 Despite the challenges, the team managed to devise effective
  solutions and achieve significant milestones. For depth-based
  perception, the ZED 2 camera was utilized for depth and RGB
