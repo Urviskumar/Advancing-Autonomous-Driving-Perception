@@ -152,7 +152,7 @@ https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/7e5
  within the lanes, demonstrating the effectiveness of the control
  algorithms implemented. The success in lane following is a
  testament to the robustness of the computer vision techniques
- and control algorithms used in this project.
+ and control algorithms used in this project.<br><br>
 The robot was capable of detecting objects of interest within
  its environment, such as ”Turn”, ”Go”, or ”Stop” signs. This
  was achieved using advanced computer vision techniques.
@@ -160,7 +160,7 @@ The robot was capable of detecting objects of interest within
  robot, adding a layer of interactivity and responsiveness to the
  system. The successful detection of objects of interest and the
  subsequent triggering of actions demonstrate the effectiveness
- of the object detection algorithms implemented.
+ of the object detection algorithms implemented.<br><br>
  The robot was able to estimate the distance to detected
  objects using depth information obtained from the camera.
  This information was crucial for making decisions about when
