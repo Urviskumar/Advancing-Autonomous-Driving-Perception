@@ -15,7 +15,7 @@
  autonomous driving perception.</p>
 
 ## Background
-In this project, we utilized depth-based perception to en
+<p align="justify">In this project, we utilized depth-based perception to en
  able autonomous navigation of the robot in an unfamiliar
  environment. The fusion of 2D LiDAR and depth camera
  sensors demanded substantial computational resources, leading
@@ -26,14 +26,14 @@ In this project, we utilized depth-based perception to en
  cameras play critical roles in mobile robot perception, pro
  viding 3D environmental information and facilitating vision
  guided navigation, respectively. Fig1 shows such example of
- the camera that we have used in this project. 
+ the camera that we have used in this project. </p>
 
   
  ##   A. Hardware and Software Setup
 
 <center><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></center>
 
-The project utilized a combination of advanced hardware
+<p align="justify">The project utilized a combination of advanced hardware
  and software to process and analyze sensor data:
 
 * Jetson Xavier Processor: Served as the computational
@@ -50,10 +50,10 @@ tation.
 
 The integration of these hardware components through ROS
  facilitated a modular approach, allowing for the independent
- development and testing of subsystems.
+ development and testing of subsystems.</p>
 
 ##  B. Challenges and Solution
-The project faced significant challenges in terms of  computational power.
+<p align="justify">The project faced significant challenges in terms of  computational power.
  The computational capacity of the Jetson
  Xavier was limited, which posed a significant hurdle. The
  team was unable to implement 2D LiDAR fusion and the
@@ -76,11 +76,11 @@ Despite the challenges, the team managed to devise effective
  the resource constraints, the team optimized algorithms for
  computational efficiency. We achieved real-time performance
  on Jetson Xavier by prioritizing system efficiency, which
- significantly improved the overall performance of the project.
+ significantly improved the overall performance of the project.</p>
 
 
 ## C. Working
- 1) Lane Detection: In this project, we embarked on a
+ <p align="justify">1) Lane Detection: In this project, we embarked on a
  journey to develop an autonomous navigation system, starting with 
  the fundamental task of detecting lanes. 
 
@@ -118,10 +118,10 @@ Despite the challenges, the team managed to devise effective
  project,we tried to improve our control as much as possible
  resulting the smooth navigation with in the environment.For lane following, a PID
  controller adjusts v and w to minimize the error between
- the robot's current position and the desired path.
+ the robot's current position and the desired path.</p>
 
 ## E. ROS Integration
- The Robot Operating System (ROS) played a pivotal role
+ <p align="justify">The Robot Operating System (ROS) played a pivotal role
  in the implementation of this project. ROS is a flexible
  framework for writing robot software and provides services
  designed for a heterogeneous computer cluster such as hardware abstraction,
@@ -134,22 +134,22 @@ For object detection, the YOLOv5 model was integrated into
  published the detections as ROS messages. These messages
  were used to trigger specific actions by the robot.
  The ZED 2 camera was used to obtain depth information,
- which was crucial for object distance estimation. 
+ which was crucial for object distance estimation. </p>
 
 ## F. Results and Analysis
- The robot demonstrated a high degree of proficiency in
+ <p align="justify">The robot demonstrated a high degree of proficiency in
  following lane markings detected in the camera images. It
  employed techniques such as color filtering and line fitting to
  identify lanes. The robot was able to adjust its steering to stay
  within the lanes, demonstrating the effectiveness of the control
  algorithms implemented. The success in lane following is a
  testament to the robustness of the computer vision techniques
- and control algorithms used in this project.
+ and control algorithms used in this project.</p>
 
 ## Conclusion
-In conclusion, the results obtained from this project demon
+<p align="justify">In conclusion, the results obtained from this project demon
  strate the effectiveness of the techniques and algorithms im
  plemented. The robot was able to follow lanes, detect objects,
  and estimate distances to objects accurately, demonstrating its
- potential for real-world applications in autonomous navigation.
+ potential for real-world applications in autonomous navigation.</p>
 
