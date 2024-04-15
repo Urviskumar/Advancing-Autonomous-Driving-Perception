@@ -128,8 +128,8 @@ Despite the challenges, the team managed to devise effective
  low-level device control, implementation of
  commonly-used functionality, message-passing between processes, and package management.</p>
 
- <p align="justify">For object detection, the YOLOv5 model was integrated into
- the ROS framework. The images from the camera were passed
+ <p align="justify">For object detection, the YOLOv5 model was 
+ integrated into the ROS framework. The images from the camera were passed
  to the YOLOv5 node, which detected objects of interest and
  published the detections as ROS messages. These messages
  were used to trigger specific actions by the robot.
