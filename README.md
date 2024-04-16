@@ -38,7 +38,7 @@
 
 * Jetson Xavier Processor: Served as the computational
  backbone, handling data processing and model execution.
-* ZED2RGBDCamera:Providedhigh-resolution images
+* ZED2 RGBD Camera:Provided high-resolution images
  and depth data, crucial for object detection and distance
  estimation. Fig 2 shows such example of the camera that
  we have used in this project.
