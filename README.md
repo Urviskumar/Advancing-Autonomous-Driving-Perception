@@ -1,5 +1,13 @@
 # Autonomous-Driving-Perception
 
+## Basic Overview
+
+ <p align="justify">This project demonstrated the effective use of computer
+ vision techniques, control algorithms, and the YOLOv5 model
+in developing an autonomous navigation system. Despite the
+ challenges faced, the project was successful in achieving
+ its objectives and contributed to the field of autonomous
+ navigation.</p>
 <p align="center"><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
 ## A. Introduction
