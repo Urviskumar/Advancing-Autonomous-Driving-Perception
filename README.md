@@ -111,7 +111,7 @@ Despite the challenges, the team managed to devise effective
   this depth information is used to
  identify obstacles, plan paths, and make decisions about the
  robot's movements. </p>
- 
+
  ```python
     def visualize_detections(self, image, detections, frame_number):
         
@@ -127,31 +127,16 @@ Despite the challenges, the team managed to devise effective
             
             color = (255, 0, 0)  # RGB color (red in this case)
 
-            # Draw the dot
-            
-
-
             # Calculate area
-            #s = (x2 - x1) * (y2 - y1)
             cx = x1 +(x2-x1)/2
             cy = y1 + (y2-y1)/2
             c = (cx, cy)
-            
 
             # Assign class name based on class number
             class_name = None  # Default for unknown classes
             if cls == 0:
                 class_name = 'Car'
-            elif cls == 1:
-                class_name = 'Walk'
-            elif cls == 2:
-                    class_name = 'Speed'
-            elif cls == 3:
-                class_name = 'Stop'
-            elif cls == 4:
-                class_name = 'Go'
-            elif cls == 5:
-                class_name = 'Turn'
+
             else:
                 class_name = None
 
@@ -161,19 +146,15 @@ Despite the challenges, the team managed to devise effective
                 point_msg = Point()
                 point_msg.x = cx
                 point_msg.y = cy
-                #point_msg.z = s
 
                 detected_class_distance = (cx,cy)
                 self.distance_publisher.publish(point_msg)
                 
-                # Publish the detected class name and distance
+            # Publish the detected class name and distance
             self.class_publisher.publish(detected_class)
-            #self.distance_publisher.publish(point_msg)
 
+            #self.distance_publisher.publish(point_msg)
             label = "{}: {:.2f}".format(class_name, conf)
-            #color = (0, 255, 0)
-              # Coordinates of the dot
-            radius = 2  # Radius of the dot
 
             draw.rectangle([x1, y1, x2, y2], outline=color, width=2)
             draw.text((x1, y1), label, fill=color)
