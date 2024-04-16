@@ -2,7 +2,7 @@
 
 <p align="center"><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
-## Introduction
+## A. Introduction
 <p align="justify">In autonomous driving, perception systems are pivotal as they
  interpret sensory data to understand the envi
  ronment, which is essential for decision-making and planning.
@@ -14,7 +14,7 @@
  Specifically, it explores the depth based perception using ZED2 camera to improve
  autonomous driving perception.</p>
 
-## Background
+## B. Background
 <p align="justify">In this project, we utilized depth-based perception to en
  able autonomous navigation of the robot in an unfamiliar
  environment. The fusion of 2D LiDAR and depth camera
@@ -29,7 +29,7 @@
  the camera that we have used in this project. </p>
 
   
- ##   A. Hardware and Software Setup
+ ##   C. Hardware and Software Setup
 
 <p align="center"><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
@@ -50,12 +50,12 @@ tation.
 
 The integration of these hardware components through ROS
  facilitated a modular approach, allowing for the independent
- development and testing of subsystems.</p>
+ development and testing of subsystems. Below figure shows the implemented environment we have used through this project.</p>
 
  <p align="center"><img src="our_environmnet.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
 
 
-##  B. Challenges and Solution
+##  D. Challenges and Solution
 <p align="justify">The project faced significant challenges in terms of  computational power.
  The computational capacity of the Jetson
  Xavier was limited, which posed a significant hurdle. The
@@ -82,7 +82,7 @@ Despite the challenges, the team managed to devise effective
  significantly improved the overall performance of the project.</p>
 
 
-## C. Working
+## E. Working
  <p align="justify">1) Lane Detection: In this project, we embarked on a
  journey to develop an autonomous navigation system, starting with 
  the fundamental task of detecting lanes. </p>
@@ -127,7 +127,7 @@ Despite the challenges, the team managed to devise effective
 https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/033d0d39-2e08-4bd2-840e-c5d0333ab1b3
 
 
-## E. ROS Integration
+## F. ROS Integration
  <p align="justify">The Robot Operating System (ROS) played a pivotal role
  in the implementation of this project. ROS is a flexible
  framework for writing robot software and provides services
@@ -147,7 +147,7 @@ https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/033
 https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/7e57924c-33b4-4871-89c8-27f249627703
 
 
-## F. Results and Analysis
+## G. Results and Analysis
  <p align="justify">The robot demonstrated a high degree of proficiency in
  following lane markings detected in the camera images. It
  employed techniques such as color filtering and line fitting to
@@ -176,7 +176,7 @@ tiveness of the depth perception capabilities of the system.</p>
 
  
 
-## Conclusion
+## H. Conclusion
 <p align="justify">In conclusion, the results obtained from this project demon
  strate the effectiveness of the techniques and algorithms im
  plemented. The robot was able to follow lanes, detect objects,
