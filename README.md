@@ -8,7 +8,7 @@ in developing an autonomous navigation system. Despite the
  challenges faced, the project was successful in achieving
  its objectives and contributed to the field of autonomous
  navigation.</p>
-<p align="center"><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
+
 
 ## A. Introduction
 <p align="justify">In autonomous driving, perception systems are pivotal as they
@@ -40,6 +40,8 @@ in developing an autonomous navigation system. Despite the
  ##   C. Hardware and Software Setup
 
 <p align="center"><img src="ZED2_Camera.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
+<p align="center"><img src="RosmasterR2.jpeg" alt="txt_to_img" width="700" height="500"/></a></p>
+
 
 <p align="justify">The project utilized a combination of advanced hardware
  and software to process and analyze sensor data:
