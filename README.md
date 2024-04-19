@@ -273,9 +273,8 @@ tiveness of the depth perception capabilities of the system.</p>
  
 
 ## H. Conclusion
-<p align="justify">In conclusion, the results obtained from this project demon
- strate the effectiveness of the techniques and algorithms im
- plemented. The robot was able to follow lanes, detect objects,
+<p align="justify">In conclusion, the results obtained from this project demonstrates the effectiveness of the techniques and algorithms implemented. 
+ The robot was able to follow lanes, detect objects,
  and estimate distances to objects accurately, demonstrating its
  potential for real-world applications in autonomous navigation.</p>
 
