@@ -10,7 +10,6 @@ in developing an autonomous navigation system. Despite the
  navigation.</p>
 
 
-https://github.com/Urviskumar/Advancing-Autonomous-Driving-Perception/assets/98739768/8020286c-526f-476d-8f6c-a255375d1701
 
 
 
@@ -139,9 +138,6 @@ Despite the challenges, the team managed to devise effective
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
 
-
-
-https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/033d0d39-2e08-4bd2-840e-c5d0333ab1b3
 
 
 ## F. ROS Integration
