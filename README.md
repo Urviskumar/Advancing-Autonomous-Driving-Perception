@@ -126,54 +126,6 @@ Despite the challenges, the team managed to devise effective
  identify obstacles, plan paths, and make decisions about the
  robot's movements. </p>
 
- ```python
-    def visualize_detections(self, image, detections, frame_number):
-        
-        # Visualize detections on the image
-        im_draw = image.copy()
-        draw = ImageDraw.Draw(im_draw)
-        detected_class = ""
-        detected_class_distance = 0.0
-
-        for det in detections:
-            x1, y1, x2, y2, conf, cls = det
-            cls = int(cls)
-            
-            color = (255, 0, 0)  # RGB color (red in this case)
-
-            # Calculate area
-            cx = x1 +(x2-x1)/2
-            cy = y1 + (y2-y1)/2
-            c = (cx, cy)
-
-            # Assign class name based on class number
-            class_name = None  # Default for unknown classes
-            if cls == 0:
-                class_name = 'Car'
-
-            else:
-                class_name = None
-
-            # Check area threshold and publish if conditions are met
-            if conf >= 0.8:
-                detected_class = class_name
-                point_msg = Point()
-                point_msg.x = cx
-                point_msg.y = cy
-
-                detected_class_distance = (cx,cy)
-                self.distance_publisher.publish(point_msg)
-                
-            # Publish the detected class name and distance
-            self.class_publisher.publish(detected_class)
-
-            #self.distance_publisher.publish(point_msg)
-            label = "{}: {:.2f}".format(class_name, conf)
-
-            draw.rectangle([x1, y1, x2, y2], outline=color, width=2)
-            draw.text((x1, y1), label, fill=color)
-            draw.ellipse([(c[0]-radius, c[1]-radius), (c[0]+radius, c[1]+radius)], fill=color)
- ```
 
  <p align="justify">
   4) PIDController:  The system utilized a PID(Proportional-Integral-Derivative)
@@ -187,38 +139,7 @@ Despite the challenges, the team managed to devise effective
  controller adjusts v and w to minimize the error between
  the robot's current position and the desired path.</p>
 
- ```python
- class PIDController:
-    def __init__(self, Kp, Ki, Kd, setpoint):
-        self.Kp = Kp  # Proportional gain
-        self.Ki = Ki  # Integral gain
-        self.Kd = Kd  # Derivative gain
-        self.setpoint = setpoint  # Setpoint value
 
-        self.error = 0  # Current error
-        self.last_error = 0  # Previous error
-        self.integral = 0  # Accumulated error
-
-    def update(self, measured_value):
-        # Calculate the error
-        self.error = self.setpoint - measured_value
-
-        # Calculate the proportional term
-        proportional_term = self.Kp * self.error
-
-        # Calculate the integral term
-        self.integral += self.error
-        integral_term = self.Ki * self.integral
-
-        # Calculate the derivative term
-        derivative_term = self.Kd * (self.error - self.last_error)
-        self.last_error = self.error
-
-        # Calculate the control output
-        control_output = proportional_term + integral_term + derivative_term
-
-        return control_output
-```
 
 https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/033d0d39-2e08-4bd2-840e-c5d0333ab1b3
 
