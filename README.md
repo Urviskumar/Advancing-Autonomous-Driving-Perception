@@ -3,7 +3,7 @@
 ## Basic Overview
 
  <p align="justify">This project demonstrated the effective use of computer
- vision techniques, control algorithms, and the YOLOv5 model
+ vision techniques, and control algorithms
 in developing an autonomous navigation system. Despite the
  challenges faced, the project was successful in achieving
  its objectives and contributed to the field of autonomous
