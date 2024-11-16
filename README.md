@@ -34,9 +34,8 @@ in developing an autonomous navigation system. Despite the
  alone. In addition to object detection, we also maneuvered the
  Rosmaster R2 bot autonomously, detecting traffic signs such
  as 'Move', 'Turn', and 'Stop'. Depth cameras and traditional
- cameras play critical roles in mobile robot perception, pro
- viding 3D environmental information and facilitating vision
- guided navigation, respectively. Fig1 shows such example of
+ cameras play critical roles in mobile robot perception, providing 3D environmental information and facilitating vision
+ guided navigation, respectively. Below figure shows such example of
  the camera that we have used in this project. </p>
 
   
