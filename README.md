@@ -34,9 +34,8 @@ in developing an autonomous navigation system. Despite the
  alone. In addition to object detection, we also maneuvered the
  Rosmaster R2 bot autonomously, detecting traffic signs such
  as 'Move', 'Turn', and 'Stop'. Depth cameras and traditional
- cameras play critical roles in mobile robot perception, pro
- viding 3D environmental information and facilitating vision
- guided navigation, respectively. Fig1 shows such example of
+ cameras play critical roles in mobile robot perception, providing 3D environmental information and facilitating vision
+ guided navigation, respectively. Below figure shows such example of
  the camera that we have used in this project. </p>
 
   
@@ -159,7 +158,69 @@ Despite the challenges, the team managed to devise effective
 
 https://github.com/Urviskumar/-Autonomous-Driving-Perception/assets/98739768/7e57924c-33b4-4871-89c8-27f249627703
 
+Lane Following:
 
+The lane following functionality of the robot involves a sophisticated combination of image processing techniques and control algorithms to ensure precise navigation along road lanes. Through the integration of edge detection and color filtering, the robot adeptly identifies and tracks lane markings, enabling it to maintain a stable and centered position within the lanes.
+Image Processing Pipeline:
+
+    Gaussian Blur:
+    The first step in the image processing pipeline involves applying a Gaussian blur to the camera input. This helps in reducing noise and smoothing out the image, preparing it for subsequent processing steps.
+
+    Yellow Color Filtering:
+    Utilizing the HSV color space, the robot isolates the yellow lane markings from the rest of the scene. By defining a specific range of yellow hues, the robot accurately filters out pixels corresponding to the lanes, enhancing the lane detection process.
+
+    Yellow color mask:
+    By identifying abrupt intensity changes in the image, edges corresponding to lane markings are extracted, providing crucial information for subsequent analysis.
+
+    Region of Interest Masking:
+    To focus solely on the relevant portion of the image, a region of interest is defined, typically covering the area of the road ahead where lane markings are expected. This helps in reducing computational overhead and improves the efficiency of lane detection.
+
+Lane Tracking and Control:
+
+Once lane markings are detected, the robot employs robust algorithms for lane tracking and control, ensuring smooth and precise navigation along the road.
+
+    Hough Line Transform:
+    Detected edges are processed using the Hough line transform to identify line segments corresponding to lane markings. These line segments are then extrapolated to form complete lane boundaries, providing a comprehensive representation of the road geometry.
+
+    Lane Centering:
+    By calculating the midpoint between the detected lane boundaries, the robot determines its position within the lane. Adjustments to the steering are made to ensure that the robot remains centered within the lanes, maintaining a consistent trajectory along the road.
+
+    PID Control:
+    The robot utilizes a PID controller to dynamically adjust its steering angle based on the deviation from the desired lane position. By continuously monitoring the error between the current and desired positions, precise steering corrections are applied, resulting in smooth and stable lane following behavior.
+
+Execution:
+
+Through the successful execution of the lane following functionality, the robot demonstrates remarkable proficiency in autonomously navigating roadways. With its ability to accurately detect and track lane markings while maintaining a centered position within the lanes, the robot showcases a high level of autonomy and adaptability in real-world driving scenarios. This robust and reliable lane following capability ensures safe and efficient navigation, contributing to the overall effectiveness of the robotic system in diverse environments.
+
+
+
+
+
+Object Detection:
+This model was built by Amir. It gives us the detections and we use it further according to our needs. 
+The object detection module equips the robot with the capability to identify and localize various objects of interest within its environment. Leveraging an ONNX model trained on the YOLOv5 architecture, the robot processes incoming camera images to detect objects such as "Car", "Walk", "Speed", "Stop", "Go", and "Turn" signs.
+Implementation Details:
+
+    ROS Publishers:
+        Two ROS publishers are initialized to broadcast information about detected objects:
+            /detected_class: Publishes the name of the detected class (e.g., "Car", "Walk", "Stop").
+            /detected_class_distance: Publishes the coordinates of the detected object's centroid.
+
+    Object Detection Logic:
+        Upon detecting objects in the image, the system extracts relevant information, including bounding box coordinates, confidence scores, and class labels.
+        The bounding box's centroid coordinates (cx, cy) are calculated to represent the object's position.
+        The class label is determined based on the assigned class number (cls), and if the confidence score exceeds a predefined threshold (e.g., 0.8), the class name is published.
+        The centroid coordinates and class label are packaged into ROS messages and published via the designated topics.
+
+    Visualization:
+        Detected objects are visualized on the camera image for debugging and visualization purposes.
+        Bounding boxes are drawn around detected objects, and labels indicating the class name and confidence score are overlayed.
+        Additionally, small dots are drawn at the centroid of each detected object for reference.
+
+    Image Processing and Publishing:
+        After processing, the annotated image with detected objects is converted back to a NumPy array and published for visualization in the ROS ecosystem.
+
+        
 ## G. Results and Analysis
  <p align="justify">The robot demonstrated a high degree of proficiency in
  following lane markings detected in the camera images. It
